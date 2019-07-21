@@ -1,0 +1,37 @@
+#---
+#网易163邮箱
+server:
+  port: 7788
+spring:
+  mail:
+    host: smtp.163.com
+    username: ddxx5317@163.com
+    password: Zhaoxw2019
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          # 需要验证登录名和密码
+          auth: true
+        starttls:
+          # 需要TLS认证 保证发送邮件安全验证
+          enable: true
+          required: true
+
+#---
+# QQ邮箱
+#spring:
+#  mail:
+#    host: smtp.qq.com
+#    username: QQ邮箱账号
+#    #这个不是QQ密码，而是自己邮箱-账户-开启POP3/SMTP时的客户端授权码
+#    password: QQ邮箱客户端授权码
+#    properties:
+#      mail:
+#        smtp:
+#          # 需要验证登录名和密码
+#          auth: true
+#        starttls:
+#           # 需要TLS认证 保证发送邮件安全验证
+#          enable: true
+#          required: true
